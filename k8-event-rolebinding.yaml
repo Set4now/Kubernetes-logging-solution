@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: k8-events
+subjects:
+- kind: ServiceAccount
+  name: k8-event # Name is case sensitive
+  namespace: default
+  apiGroup: ""
+roleRef:
+  kind: ClusterRole #this must be Role or ClusterRole
+  name: cluster-admin # this must match the name of the Role or ClusterRole you wish to bind to
+  apiGroup: ""
