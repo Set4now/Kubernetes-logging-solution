@@ -35,7 +35,7 @@ kubectl create -f k8-event-cluster-role.yaml -f k8-event-rolebinding.yaml
 kubectl create -f fluent-bit-config.yaml -f fluent-bit-daemonset.yaml
 
 ```
-4.Now deploy our add as a pod or deployment.
+4.Now deploy our app as a pod or deployment.
 ```
 
 
